@@ -1,7 +1,11 @@
 FROM nimmis/ubuntu:latest
 MAINTAINER nimmis <kjell.havneskold@gmail.com>
 
-ADD bin/* /usr/local/bin/
+ADD bin/mysql_postinit.sh /usr/local/bin/ 
+ADD bin/mysql_setrootpassword  /usr/local/bin/
+ADD bin/mysql_setup_database.sh  /usr/local/bin/
+ADD bin/mysql_user_postinit.sh  /usr/local/bin/
+ADD bin/mysql_user_preinit.sh /usr/local/bin/
 ADD supervisor/mariadb.conf /etc/supervisor/conf.d/
 
 RUN apt-get install software-properties-common && \
