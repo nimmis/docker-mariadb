@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Dcoker mysql processscript
+# Docker mysql processscript
 #
 # (c) 2015 nimmis <kjell.havneskold@gmail.com>
 #
