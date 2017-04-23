@@ -6,7 +6,10 @@ ADD bin/mysql_setrootpassword  /usr/local/bin/
 ADD bin/mysql_setup_database.sh  /usr/local/bin/
 ADD bin/mysql_user_postinit.sh  /usr/local/bin/
 ADD bin/mysql_user_preinit.sh /usr/local/bin/
+ADD bin/init.sh /usr/local/bin/
 ADD supervisor/mariadb.conf /etc/supervisor/conf.d/
+
+RUN mkdir /docker-entrypoint-initdb.d
 
 RUN apt-get install software-properties-common && \
     apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db && \
