@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Dcoker mysql processscript
+# Docker mysql processscript
 #
 # (c) 2015 nimmis <kjell.havneskold@gmail.com>
 #
@@ -27,3 +27,5 @@ if [ ! -f /var/lib/mysql/configured ]; then
    touch /var/lib/mysql/configured
 
 fi
+
+/usr/local/bin/init.sh

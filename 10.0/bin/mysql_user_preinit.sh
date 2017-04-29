@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Dcoker mysql processscript 
+# Docker mysql processscript 
 #
 # Script to do stuff before the script to create the database
 #

@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Dcoker mysql processscript 
+# Docker mysql processscript 
 #
 # creates a mysql user by the name DB_USER with the password DB_USER_PASSWORD
 # if DB_USER is defined but not DB_USER_PASSWORD a random password is created
