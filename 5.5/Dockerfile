@@ -1,4 +1,4 @@
-FROM nimmis/ubuntu:latest
+FROM nimmis/ubuntu:14.04
 MAINTAINER nimmis <kjell.havneskold@gmail.com>
 
 ADD bin/* /usr/local/bin/
